@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
  
-function App() {
+const App = () => {
   const tdStyle = {width: "40px", height: "40px", padding: "5px 12px"};
   const tdStyle36 = {width: "40px", height: "40px", padding: "5px 12px", borderRight: "3px solid #333"};
   const tdStyle47 = {width: "40px", height: "40px", padding: "5px 12px", borderTop: "3px solid #333"};
   const tdStyle4736 = {width: "40px", height: "40px", padding: "5px 12px", borderRight: "3px solid #333", borderTop: "3px solid #333"};
   const borderThickness = {border: "3px solid #333"};
   const inputStyle = {border: "none", width: "30px", height: "30px", textAlign: "center"};
+  const [value, setValue] = useState("");
   return (
     <div>
       <h1 className="bg-primary text-white display-4">数独自動化アプリ</h1>
@@ -15,103 +16,103 @@ function App() {
         <table className="table table-bordered" style={borderThickness}>
             <tbody>
                 <tr>
-                    <td style={tdStyle}><input name="1-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="1-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="1-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="1-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value11" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value12" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value13" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value14" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value15" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value16" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value17" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value18" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value19" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="2-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="2-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="2-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="2-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value21" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value22" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value23" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value24" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value25" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value26" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value27" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value28" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value29" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="3-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="3-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="3-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="3-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value31" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value32" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value33" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value34" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value35" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value36" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value37" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value38" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value39" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle47}><input name="4-1" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-2" style={inputStyle}></input></td>
-                    <td style={tdStyle4736}><input name="4-3" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-4" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-5" style={inputStyle}></input></td>
-                    <td style={tdStyle4736}><input name="4-6" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-7" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-8" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="4-9" style={inputStyle}></input></td>
+                    <td style={tdStyle47}><input name="value41" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value42" style={inputStyle}/></td>
+                    <td style={tdStyle4736}><input name="value43" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value44" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value45" style={inputStyle}/></td>
+                    <td style={tdStyle4736}><input name="value46" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value47" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value48" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value49" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="5-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="5-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="5-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="5-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value51" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value52" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value53" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value54" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value55" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value56" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value57" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value58" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value59" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="6-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="6-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="6-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="6-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value61" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value62" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value63" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value64" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value65" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value66" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value67" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value68" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value69" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle47}><input name="7-1" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-2" style={inputStyle}></input></td>
-                    <td style={tdStyle4736}><input name="7-3" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-4" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-5" style={inputStyle}></input></td>
-                    <td style={tdStyle4736}><input name="7-6" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-7" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-8" style={inputStyle}></input></td>
-                    <td style={tdStyle47}><input name="7-9" style={inputStyle}></input></td>
+                    <td style={tdStyle47}><input name="value71" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value72" style={inputStyle}/></td>
+                    <td style={tdStyle4736}><input name="value73" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value74" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value75" style={inputStyle}/></td>
+                    <td style={tdStyle4736}><input name="value76" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value77" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value78" style={inputStyle}/></td>
+                    <td style={tdStyle47}><input name="value79" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="8-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="8-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="8-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="8-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value81" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value82" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value83" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value84" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value85" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value86" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value87" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value88" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value89" style={inputStyle}/></td>
                 </tr>
                 <tr>
-                    <td style={tdStyle}><input name="9-1" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-2" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="9-3" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-4" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-5" style={inputStyle}></input></td>
-                    <td style={tdStyle36}><input name="9-6" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-7" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-8" style={inputStyle}></input></td>
-                    <td style={tdStyle}><input name="9-9" style={inputStyle}></input></td>
+                    <td style={tdStyle}><input name="value91" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value92" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value93" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value94" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value95" style={inputStyle}/></td>
+                    <td style={tdStyle36}><input name="value96" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value97" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value98" style={inputStyle}/></td>
+                    <td style={tdStyle}><input name="value99" style={inputStyle}/></td>
                 </tr>
             </tbody>
         </table>
