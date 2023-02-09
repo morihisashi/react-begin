@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
  
 const App = () => {
-  const tdStyle = {width: "40px", height: "40px", padding: "5px 12px"};
-  const tdStyle36 = {width: "40px", height: "40px", padding: "5px 12px", borderRight: "3px solid #333"};
-  const tdStyle47 = {width: "40px", height: "40px", padding: "5px 12px", borderTop: "3px solid #333"};
-  const tdStyle4736 = {width: "40px", height: "40px", padding: "5px 12px", borderRight: "3px solid #333", borderTop: "3px solid #333"};
-  const borderThickness = {border: "3px solid #333"};
-  const inputStyle = {border: "none", width: "30px", height: "30px", textAlign: "center"};
+  const tdStyle = {width: "auto", height: "auto", padding: "5px 15px"};
+  const tdStyle36 = {width: "auto", height: "auto", padding: "5px 15px", borderRight: "3px solid #333"};
+  const tdStyle47 = {width: "auto", height: "auto", padding: "5px 15px", borderTop: "3px solid #333"};
+  const tdStyle4736 = {width: "auto", height: "auto", padding: "5px 15px", borderRight: "3px solid #333", borderTop: "3px solid #333"};
+  const borderThickness = {width: "70%", border: "3px solid #333"};
+  const inputStyle = {border: "none", width: "100%", height: "auto", textAlign: "center"};
+  const buttondiv = {width: "70%"};
   const [value, setValue] = useState("");
   return (
     <div>
@@ -117,7 +118,7 @@ const App = () => {
             </tbody>
         </table>
  
-        <div className="card p-3 border-primary text-center">
+        <div className="card p-3 border-primary text-center" style={buttondiv}>
           <div><button className="btn btn-primary">解読</button></div>
         </div>
       </div>
