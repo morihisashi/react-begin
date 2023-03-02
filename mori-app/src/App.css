@@ -1,7 +1,7 @@
 h1 {
-  text-align: left;
-  padding: 0px, 50px, 10px, 50px;
-  margin: 0px, 0px, 10px, 0px;
+  text-align: center;
+  background-color: blue;
+  color:white;
 }
  
 .subtitle {
@@ -9,4 +9,46 @@ h1 {
   color:#999;
   font-weight: bolder;
   font-size: 24pt;
+}
+
+.tdStyle36 {
+  width: auto;
+  height: auto;
+  border-right: 3px solid #333;
+}
+
+.tdStyle47 {
+  width: auto;
+  height: auto;
+  border-top: 3px solid #333;
+}
+
+.tdStyle4736 {
+  width: auto;
+  height: auto;
+  border-right: 3px solid #333;
+  border-top: 3px solid #333;
+}
+
+.borderThickness {
+  width: 100%;
+  border: 3px solid #333;
+}
+
+.inputStyle {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.buttondiv {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #7FFFD4;
+}
+
+.buttonstyle {
+  background-color: blue;
+  color:white;
 }
