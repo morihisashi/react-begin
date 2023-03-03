@@ -22,6 +22,17 @@ export function Number(props){
     const line7 = [data['71'], data['72'], data['73'], data['74'], data['75'], data['76'], data['77'], data['78'], data['79']];
     const line8 = [data['81'], data['82'], data['83'], data['84'], data['85'], data['86'], data['87'], data['88'], data['89']];
     const line9 = [data['91'], data['92'], data['93'], data['94'], data['95'], data['96'], data['97'], data['98'], data['99']];
+    
+    const col1 = [data['11'], data['12'], data['13'], data['21'], data['22'], data['23'], data['31'], data['32'], data['33']];
+    const col2 = [data['14'], data['15'], data['16'], data['24'], data['25'], data['26'], data['34'], data['35'], data['36']];
+    const col3 = [data['17'], data['18'], data['19'], data['27'], data['28'], data['29'], data['37'], data['38'], data['39']];
+    const col4 = [data['41'], data['42'], data['43'], data['51'], data['52'], data['53'], data['61'], data['62'], data['63']];
+    const col5 = [data['44'], data['45'], data['46'], data['54'], data['55'], data['56'], data['64'], data['65'], data['66']];
+    const col6 = [data['47'], data['48'], data['49'], data['57'], data['58'], data['59'], data['67'], data['68'], data['69']];
+    const col7 = [data['71'], data['72'], data['73'], data['81'], data['82'], data['83'], data['91'], data['92'], data['93']];
+    const col8 = [data['74'], data['75'], data['76'], data['84'], data['85'], data['86'], data['94'], data['95'], data['96']];
+    const col9 = [data['77'], data['78'], data['79'], data['87'], data['88'], data['89'], data['97'], data['98'], data['99']];
+    
     return(
         <div>
             <table className={'borderThickness'}>
